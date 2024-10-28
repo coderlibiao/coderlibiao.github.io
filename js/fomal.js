@@ -3185,6 +3185,8 @@ function changeBg(s) {
   // 自定义颜色框
   defineColor = s.charAt(0) == "#" ? s : '#F4D88A';
   setBg(s);
+
+
   localStorage.setItem("blogbg", s);
 }
 // 设置背景属性
