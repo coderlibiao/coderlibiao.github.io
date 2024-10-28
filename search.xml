@@ -4,19 +4,6 @@
   
     
     <entry>
-      <title>第一篇文章</title>
-      <link href="/posts/5c2fafc7.html"/>
-      <url>/posts/5c2fafc7.html</url>
-      
-        <content type="html"><![CDATA[<p>第一篇文章 耶耶耶!</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Markdown语法与外挂标签写法汇总</title>
       <link href="/posts/2013454d.html"/>
       <url>/posts/2013454d.html</url>
@@ -26,7 +13,7 @@
       
       <categories>
           
-          <category> 演示 </category>
+          <category> Mardown </category>
           
       </categories>
       

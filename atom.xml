@@ -6,7 +6,7 @@
   <link href="https://coderlibiao.github.io/atom.xml" rel="self"/>
   
   <link href="https://coderlibiao.github.io/"/>
-  <updated>2024-10-27T14:17:55.278Z</updated>
+  <updated>2022-10-23T14:00:00.000Z</updated>
   <id>https://coderlibiao.github.io/</id>
   
   <author>
@@ -15,27 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>第一篇文章</title>
-    <link href="https://coderlibiao.github.io/posts/5c2fafc7.html"/>
-    <id>https://coderlibiao.github.io/posts/5c2fafc7.html</id>
-    <published>2024-10-27T14:17:25.000Z</published>
-    <updated>2024-10-27T14:17:55.278Z</updated>
-    
-    <content type="html"><![CDATA[<p>第一篇文章 耶耶耶!</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;第一篇文章 耶耶耶!&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>Markdown语法与外挂标签写法汇总</title>
@@ -51,7 +30,7 @@
     
     
     
-    <category term="演示" scheme="https://coderlibiao.github.io/categories/%E6%BC%94%E7%A4%BA/"/>
+    <category term="Mardown" scheme="https://coderlibiao.github.io/categories/Mardown/"/>
     
     
     <category term="Markdown" scheme="https://coderlibiao.github.io/tags/Markdown/"/>
