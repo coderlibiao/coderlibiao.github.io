@@ -1,8 +1,8 @@
 /* 阅读进度 start */
-document.addEventListener('pjax:complete', function () {
+document.addEventListener('pjax:complete', function() {
   window.onscroll = percent;
 });
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
   window.onscroll = percent;
 });
 // 页面百分比
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', tonav);
 function tonav() {
   document.getElementById("name-container").setAttribute("style", "display:none");
   var position = $(window).scrollTop();
-  $(window).scroll(function () {
+  $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     if (scroll > position) {
       document.getElementById("name-container").setAttribute("style", "");
@@ -77,7 +77,7 @@ $.ajax({
     output: 'jsonp',
   },
   dataType: 'jsonp',
-  success: function (res) {
+  success: function(res) {
     ipLoacation = res;
   }
 })
@@ -324,7 +324,7 @@ function getWeibo() {
     }
     html += '</div>'
     document.getElementById('weibo-container').innerHTML = html
-  }).catch(function (error) {
+  }).catch(function(error) {
     console.log(error);
   });
 }
@@ -343,10 +343,10 @@ function debounce(fn, time) {
 }
 
 // 复制提醒
-document.addEventListener("copy", function () {
-  debounce(function () {
+document.addEventListener("copy", function() {
+  debounce(function() {
     new Vue({
-      data: function () {
+      data: function() {
         this.$notify({
           title: "哎嘿！复制成功🍬",
           message: "若要转载最好保留原文链接哦，给你一个大大的赞！",
@@ -363,11 +363,11 @@ document.addEventListener("copy", function () {
 
 
 // f12提醒但不禁用
-document.onkeydown = function (e) {
+document.onkeydown = function(e) {
   if (123 == e.keyCode || (e.ctrlKey && e.shiftKey && (74 === e.keyCode || 73 === e.keyCode || 67 === e.keyCode)) || (e.ctrlKey && 85 === e.keyCode)) {
-    debounce(function () {
+    debounce(function() {
       new Vue({
-        data: function () {
+        data: function() {
           this.$notify({
             title: "你已被发现😜",
             message: "小伙子，扒源记住要遵循GPL协议！",
@@ -402,7 +402,7 @@ if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobi
       opacity: .7,    // 雪花透明度
       stepsize: .5    // 步距
     };
-    const t = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame || function (e) {
+    const t = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame || function(e) {
       window.setTimeout(e, 1e3 / 60)
     }
       ;
@@ -519,20 +519,20 @@ function dark() {
     }
   }
   function y() {
-    this.reset = function () {
+    this.reset = function() {
       this.giant = m(3), this.comet = !this.giant && !o && m(10), this.x = l(0, n - 10), this.y = l(0, e), this.r = l(1.1, 2.6), this.dx = l(t, 6 * t) + (this.comet + 1 - 1) * t * l(50, 120) + 2 * t, this.dy = -l(t, 6 * t) - (this.comet + 1 - 1) * t * l(50, 120), this.fadingOut = null, this.fadingIn = !0, this.opacity = 0, this.opacityTresh = l(.2, 1 - .4 * (this.comet + 1 - 1)), this.do = l(5e-4, .002) + .001 * (this.comet + 1 - 1)
-    }, this.fadeIn = function () {
+    }, this.fadeIn = function() {
       this.fadingIn && (this.fadingIn = !(this.opacity > this.opacityTresh), this.opacity += this.do)
-    }, this.fadeOut = function () {
+    }, this.fadeOut = function() {
       this.fadingOut && (this.fadingOut = !(this.opacity < 0), this.opacity -= this.do / 2, (this.x > n || this.y < 0) && (this.fadingOut = !1, this.reset()))
-    }, this.draw = function () {
+    }, this.draw = function() {
       if (h.beginPath(), this.giant) h.fillStyle = "rgba(" + a + "," + this.opacity + ")", h.arc(this.x, this.y, 2, 0, 2 * Math.PI, !1); else if (this.comet) {
         h.fillStyle = "rgba(" + d + "," + this.opacity + ")", h.arc(this.x, this.y, 1.5, 0, 2 * Math.PI, !1); for (var t = 0; t < 30; t++)h.fillStyle = "rgba(" + d + "," + (this.opacity - this.opacity / 20 * t) + ")", h.rect(this.x - this.dx / 4 * t, this.y - this.dy / 4 * t - 2, 2, 2), h.fill()
       } else h.fillStyle = "rgba(" + r + "," + this.opacity + ")", h.rect(this.x, this.y, this.r, this.r);
       h.closePath(), h.fill()
-    }, this.move = function () {
+    }, this.move = function() {
       this.x += this.dx, this.y += this.dy, !1 === this.fadingOut && this.reset(), (this.x > n - n / 4 || this.y < 0) && (this.fadingOut = !0)
-    }, setTimeout(function () {
+    }, setTimeout(function() {
       o = !1
     }, 50)
   }
@@ -542,7 +542,7 @@ function dark() {
   function l(t, i) {
     return Math.random() * (i - t) + t
   }
-  f(), window.addEventListener("resize", f, !1), function () {
+  f(), window.addEventListener("resize", f, !1), function() {
     h = s.getContext("2d");
     for (var t = 0; t < i; t++) c[t] = new y, c[t].reset();
     u()
@@ -556,10 +556,10 @@ dark()
 //----------------------------------------------------------------
 
 /* 表情放大 start */
-document.addEventListener('pjax:complete', function () {
+document.addEventListener('pjax:complete', function() {
   if (document.getElementById('post-comment')) owoBig();
 });
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
   if (document.getElementById('post-comment')) owoBig();
 });
 
@@ -665,8 +665,8 @@ if (document.body.clientWidth > 992) {
       $(".neko").css('display', 'none');
     }
   }
-  (function ($) {
-    $.fn.nekoScroll = function (option) {
+  (function($) {
+    $.fn.nekoScroll = function(option) {
       var defaultSetting = {
         top: '0',
         scroWidth: 6 + 'px',
@@ -711,7 +711,7 @@ if (document.body.clientWidth > 992) {
         });
       show(getBasicInfo());
       $(window)
-        .scroll(function () {
+        .scroll(function() {
           let basicInfo = getBasicInfo();
           show(basicInfo);
           $(getThis)
@@ -746,18 +746,18 @@ if (document.body.clientWidth > 992) {
               .attr("data-msg", setting.hoverMsg);
           }
         });
-      this.click(function (e) {
+      this.click(function(e) {
         btf.scrollToDest(0, 500)
       });
       $("#" + setting.nekoname)
-        .click(function () {
+        .click(function() {
           btf.scrollToDest(0, 500)
         });
       return this;
     }
   })(jQuery);
 
-  $(document).ready(function () {
+  $(document).ready(function() {
     //部分自定义
     $("#myscoll").nekoScroll({
       bgcolor: 'rgb(0 0 0 / .5)', //背景颜色，没有绳子背景图片时有效
@@ -843,7 +843,7 @@ function insertAtCursor(myField, myValue) {
 }
 
 let rmf = {};
-rmf.showRightMenu = function (isTrue, x = 0, y = 0) {
+rmf.showRightMenu = function(isTrue, x = 0, y = 0) {
   let $rightMenu = $('#rightMenu');
   $rightMenu.css('top', x + 'px').css('left', y + 'px');
 
@@ -854,7 +854,7 @@ rmf.showRightMenu = function (isTrue, x = 0, y = 0) {
   }
 }
 
-rmf.copyWordsLink = function () {
+rmf.copyWordsLink = function() {
   let url = window.location.href
   let txa = document.createElement("textarea");
   txa.value = url;
@@ -863,7 +863,7 @@ rmf.copyWordsLink = function () {
   document.execCommand("Copy");
   document.body.removeChild(txa);
 }
-rmf.switchReadMode = function () {
+rmf.switchReadMode = function() {
   const $body = document.body
   $body.classList.add('read-mode')
   const newEle = document.createElement('button')
@@ -881,23 +881,23 @@ rmf.switchReadMode = function () {
 }
 
 //复制选中文字
-rmf.copySelect = function () {
+rmf.copySelect = function() {
   document.execCommand('Copy', false, null);
 }
 
 //回到顶部
-rmf.scrollToTop = function () {
+rmf.scrollToTop = function() {
   document.getElementsByClassName("menus_items")[1].setAttribute("style", "");
   document.getElementById("name-container").setAttribute("style", "display:none");
   btf.scrollToDest(0, 500);
 }
 
-document.body.addEventListener('touchmove', function () {
+document.body.addEventListener('touchmove', function() {
 
 }, { passive: false });
 
 function popupMenu() {
-  window.oncontextmenu = function (event) {
+  window.oncontextmenu = function(event) {
     // if (event.ctrlKey) return true;
 
     // 当关掉自定义右键时候直接返回
@@ -922,7 +922,7 @@ function popupMenu() {
     }
     if (el.tagName == 'A') {
       $('#menu-to').show()
-      rmf.open = function () {
+      rmf.open = function() {
         if (el.href.indexOf("http://") == -1 && el.href.indexOf("https://") == -1 || el.href.indexOf("yisous.xyz") != -1) {
           pjax.loadUrl(el.href)
         }
@@ -930,11 +930,11 @@ function popupMenu() {
           location.href = el.href
         }
       }
-      rmf.openWithNewTab = function () {
+      rmf.openWithNewTab = function() {
         window.open(el.href);
         // window.location.reload();
       }
-      rmf.copyLink = function () {
+      rmf.copyLink = function() {
         let url = el.href
         let txa = document.createElement("textarea");
         txa.value = url;
@@ -945,14 +945,14 @@ function popupMenu() {
       }
     } else if (el.tagName == 'IMG') {
       $('#menu-img').show()
-      rmf.openWithNewTab = function () {
+      rmf.openWithNewTab = function() {
         window.open(el.src);
         // window.location.reload();
       }
-      rmf.click = function () {
+      rmf.click = function() {
         el.click()
       }
-      rmf.copyLink = function () {
+      rmf.copyLink = function() {
         let url = el.src
         let txa = document.createElement("textarea");
         txa.value = url;
@@ -961,7 +961,7 @@ function popupMenu() {
         document.execCommand("Copy");
         document.body.removeChild(txa);
       }
-      rmf.saveAs = function () {
+      rmf.saveAs = function() {
         var a = document.createElement('a');
         var url = el.src;
         var filename = url.split("/")[-1];
@@ -972,7 +972,7 @@ function popupMenu() {
       }
     } else if (el.tagName == "TEXTAREA" || el.tagName == "INPUT") {
       $('#menu-paste').show();
-      rmf.paste = function () {
+      rmf.paste = function() {
         navigator.permissions
           .query({
             name: 'clipboard-read'
@@ -1021,7 +1021,7 @@ function popupMenu() {
     return false;
   };
 
-  window.addEventListener('click', function () {
+  window.addEventListener('click', function() {
     rmf.showRightMenu(false);
   });
 }
@@ -1056,7 +1056,7 @@ function addLongtabListener(target, callback) {
 addLongtabListener(box, popupMenu)
 
 // 全屏
-rmf.fullScreen = function () {
+rmf.fullScreen = function() {
   if (document.fullscreenElement) document.exitFullscreen();
   else document.documentElement.requestFullscreen();
 }
@@ -1070,9 +1070,9 @@ function changeMouseMode() {
   if (localStorage.getItem("mouse") == "on") {
     mouseMode = "off";
     localStorage.setItem("mouse", "off");
-    debounce(function () {
+    debounce(function() {
       new Vue({
-        data: function () {
+        data: function() {
           this.$notify({
             title: "切换右键模式成功🍔",
             message: "当前鼠标右键已恢复为系统默认！",
@@ -1088,9 +1088,9 @@ function changeMouseMode() {
   } else {
     mouseMode = "on";
     localStorage.setItem("mouse", "on");
-    debounce(function () {
+    debounce(function() {
       new Vue({
-        data: function () {
+        data: function() {
           this.$notify({
             title: "切换右键模式成功🍔",
             message: "当前鼠标右键已更换为网站指定样式！",
@@ -1186,9 +1186,9 @@ function createtime2() {
 createtime2();
 
 // 重写console方法
-console.log = function () { };
-console.error = function () { };
-console.warn = function () { };
+console.log = function() { };
+console.error = function() { };
+console.warn = function() { };
 
 /* 控制台输出字符画 end */
 
@@ -1197,12 +1197,12 @@ console.warn = function () { };
 /* 夜间模式切换动画 start */
 function switchNightMode() {
   document.querySelector('body').insertAdjacentHTML('beforeend', '<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"><div id="sun"></div><div id="moon"></div></div></div>'),
-    setTimeout(function () {
+    setTimeout(function() {
       document.querySelector('body').classList.contains('DarkMode') ? (document.querySelector('body').classList.remove('DarkMode'), localStorage.setItem('isDark', '0'), document.getElementById('modeicon').setAttribute('xlink:href', '#icon-moon')) : (document.querySelector('body').classList.add('DarkMode'), localStorage.setItem('isDark', '1'), document.getElementById('modeicon').setAttribute('xlink:href', '#icon-sun')),
-        setTimeout(function () {
+        setTimeout(function() {
           document.getElementsByClassName('Cuteen_DarkSky')[0].style.transition = 'opacity 3s';
           document.getElementsByClassName('Cuteen_DarkSky')[0].style.opacity = '0';
-          setTimeout(function () {
+          setTimeout(function() {
             document.getElementsByClassName('Cuteen_DarkSky')[0].remove();
           }, 1e3);
         }, 2e3)
@@ -1212,7 +1212,7 @@ function switchNightMode() {
     // 先设置太阳月亮透明度
     document.getElementById("sun").style.opacity = "1";
     document.getElementById("moon").style.opacity = "0";
-    setTimeout(function () {
+    setTimeout(function() {
       document.getElementById("sun").style.opacity = "0";
       document.getElementById("moon").style.opacity = "1";
     }, 1000);
@@ -1224,7 +1224,7 @@ function switchNightMode() {
     // 延时弹窗提醒
     setTimeout(() => {
       new Vue({
-        data: function () {
+        data: function() {
           this.$notify({
             title: "关灯啦🌙",
             message: "当前已成功切换至夜间模式！",
@@ -1241,7 +1241,7 @@ function switchNightMode() {
     // 先设置太阳月亮透明度
     document.getElementById("sun").style.opacity = "0";
     document.getElementById("moon").style.opacity = "1";
-    setTimeout(function () {
+    setTimeout(function() {
       document.getElementById("sun").style.opacity = "1";
       document.getElementById("moon").style.opacity = "0";
     }, 1000);
@@ -1251,7 +1251,7 @@ function switchNightMode() {
     document.querySelector('body').classList.add('DarkMode'), document.getElementById('modeicon').setAttribute('xlink:href', '#icon-moon')
     setTimeout(() => {
       new Vue({
-        data: function () {
+        data: function() {
           this.$notify({
             title: "开灯啦🌞",
             message: "当前已成功切换至白天模式！",
@@ -1285,7 +1285,7 @@ function share_() {
     var subTitle = title.endsWith("| Fomalhaut🥝") ? title.substring(0, title.length - 14) : title;
     navigator.clipboard.writeText('Fomalhaut🥝的站内分享\n标题：' + subTitle + '\n链接：' + url + '\n欢迎来访！🍭🍭🍭');
     new Vue({
-      data: function () {
+      data: function() {
         this.$notify({
           title: "成功复制分享信息🎉",
           message: "您现在可以通过粘贴直接跟小伙伴分享了！",
@@ -1318,7 +1318,7 @@ function share() {
 //动态标题
 var OriginTitile = document.title;
 var titleTime;
-document.addEventListener('visibilitychange', function () {
+document.addEventListener('visibilitychange', function() {
   if (document.hidden) {
     //离开当前页面时标签显示内容
     document.title = '👀跑哪里去了~';
@@ -1327,7 +1327,7 @@ document.addEventListener('visibilitychange', function () {
     //返回当前页面时标签显示内容
     document.title = '🐖抓到你啦～';
     //两秒后变回正常标题
-    titleTime = setTimeout(function () {
+    titleTime = setTimeout(function() {
       document.title = OriginTitile;
     }, 2000);
   }
@@ -2306,7 +2306,7 @@ var calendarFormatter = {
 
   // 传入阳历年月日获得详细的公历、农历object信息 <=>JSON
 
-  solar2lunar: function (y, m, d) { // 参数区间1900.1.31~2100.12.31
+  solar2lunar: function(y, m, d) { // 参数区间1900.1.31~2100.12.31
 
     return solar2lunar(y, m, d)
 
@@ -2330,7 +2330,7 @@ var calendarFormatter = {
 
   */
 
-  lunar2solar: function (y, m, d, isLeapMonth) { // 参数区间1900.1.31~2100.12.1
+  lunar2solar: function(y, m, d, isLeapMonth) { // 参数区间1900.1.31~2100.12.1
 
     isLeapMonth = !!isLeapMonth
 
@@ -2821,11 +2821,11 @@ setInterval(() => {
 
 /* fps检测 start */
 if (window.localStorage.getItem("fpson") == undefined || window.localStorage.getItem("fpson") == "1") {
-  var rAF = function () {
+  var rAF = function() {
     return (
       window.requestAnimationFrame ||
       window.webkitRequestAnimationFrame ||
-      function (callback) {
+      function(callback) {
         window.setTimeout(callback, 1000 / 60);
       }
     );
@@ -2834,7 +2834,7 @@ if (window.localStorage.getItem("fpson") == undefined || window.localStorage.get
   var allFrameCount = 0;
   var lastTime = Date.now();
   var lastFameTime = Date.now();
-  var loop = function () {
+  var loop = function() {
     var now = Date.now();
     var fs = (now - lastFameTime);
     var fps = Math.round(1000 / fs);
@@ -2885,9 +2885,9 @@ if (localStorage.getItem("reset_4") == undefined) {
     localStorage.removeItem("reset_" + i);
   }
   clearItem();
-  setTimeout(function () {
+  setTimeout(function() {
     new Vue({
-      data: function () {
+      data: function() {
         this.$notify({
           title: "提示🍒",
           message: " (｡･∀･)ﾉﾞ由于网站部分设置项更新，当前已为您重置所有设置，祝您愉快！",
@@ -2942,7 +2942,7 @@ function setFontBorder() {
   var curFont = localStorage.getItem("font");
   var swfId = "swf_" + curFont;
   document.getElementById(swfId).style.border = "2px solid var(--theme-color)";
-  Array.prototype.forEach.call(document.getElementsByClassName("swf"), function (ee) {
+  Array.prototype.forEach.call(document.getElementsByClassName("swf"), function(ee) {
     if (ee.id != swfId) ee.style.border = "2px solid var(--border-color)";
   });
 }
@@ -3174,7 +3174,7 @@ if (localStorage.getItem("blogbg") != undefined) {
   setBg(localStorage.getItem("blogbg"));
 } else {
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/dm14.webp);
+    --default-bg: url(https://github.com/coderlibiao/coderlibiao.github.io/tree/main/assets/bg.png);
     --darkmode-bg:url(https://lskypro.acozycotage.net/Fomalhaut/img/yuanshen1.webp);
     --mobileday-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/snow.webp);
     --mobilenight-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/mb8.webp);
@@ -3209,7 +3209,7 @@ function getPicture_() {
     changeBg(link);
     // 提示切换成功
     new Vue({
-      data: function () {
+      data: function() {
         this.$notify({
           title: "可以啦🍨",
           message: "切换自定义背景成功！",
@@ -3224,7 +3224,7 @@ function getPicture_() {
   }).catch(() => {
     // 无效的图片链接，提示无效
     new Vue({
-      data: function () {
+      data: function() {
         this.$notify({
           title: "链接不对🤣",
           message: "请输入有效的图片链接！",
@@ -3240,13 +3240,13 @@ function getPicture_() {
 }
 // 判断图片链接是否可用
 function checkImgExists(imgurl) {
-  return new Promise(function (resolve, reject) {
+  return new Promise(function(resolve, reject) {
     var ImgObj = new Image();
     ImgObj.src = imgurl;
-    ImgObj.onload = function (res) {
+    ImgObj.onload = function(res) {
       resolve(res);
     }
-    ImgObj.onerror = function (err) {
+    ImgObj.onerror = function(err) {
       reject(err);
     }
   })
@@ -3257,10 +3257,10 @@ if (localStorage.getItem("light") == undefined) {
   localStorage.setItem("light", "true");
 }
 // 这里要适配Pjax
-document.addEventListener('pjax:complete', function () {
+document.addEventListener('pjax:complete', function() {
   changeLight(localStorage.getItem("light") == "true" ? true : false)
 });
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
   changeLight(localStorage.getItem("light") == "true" ? true : false)
 });
 function setLight() {
