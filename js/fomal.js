@@ -2805,7 +2805,7 @@ function createtime() {
   (currentTimeHtml =
     hnum < 18 && hnum >= 9
       ? `<div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`
-      : `<img class='boardsign' src='https://lskypro.acozycotage.net/Fomalhaut/badge/F小屋-下班休息啦.svg' title='下班了就该开开心心地玩耍~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`),
+      : `<img class='boardsign' width="10px" height="10px" src='https://raw.githubusercontent.com/coderlibiao/img/main/blog/圣诞礼物.svg' title='下班了就该开开心心地玩耍~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`),
     document.getElementById("workboard") &&
     (document.getElementById("workboard").innerHTML = currentTimeHtml);
 }
@@ -3409,11 +3409,9 @@ function createWinbox() {
 <h3>1. 二次元</h3>
 <details class="folding-tag" cyan><summary> 查看二次元背景 </summary>
               <div class='content'>
-              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/home_bg.webp)" class="imgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/home_bg.webp)')"></a></div>
+              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://raw.githubusercontent.com/coderlibiao/img/main/blog/微信图片_20241031231737.webp)" class="imgbox" onclick="changeBg('url(https://raw.githubusercontent.com/coderlibiao/img/main/blog/微信图片_20241031231737.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://raw.githubusercontent.com/coderlibiao/img/main/blog/微信图片_20241031231745.webp)" class="imgbox" onclick="changeBg('url(https://raw.githubusercontent.com/coderlibiao/img/main/blog/微信图片_20241031231745.jpg)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/home_bg.webp)" class="imgbox" onclick="changeBg('url(https://raw.githubusercontent.com/coderlibiao/img/main/blog/微信图片_20241031231723.jpg)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/home_bg.webp)" class="imgbox" onclick="changeBg('url(https://raw.githubusercontent.com/coderlibiao/img/main/blog/微信图片_20241031231732.jpg)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/home_bg.webp)" class="imgbox" onclick="changeBg('url(https://raw.githubusercontent.com/coderlibiao/img/main/blog/微信图片_20241031231716.jpg)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/home_bg.webp)" class="imgbox" onclick="changeBg('url(https://raw.githubusercontent.com/coderlibiao/img/main/blog/微信图片_20241031231716.jpg)')"></a></div>
               </div>
             </details>
-
-
 <h3>2. 风景</h3>
 
 <details class="folding-tag" cyan><summary> 查看风景背景 </summary>
