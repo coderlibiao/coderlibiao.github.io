@@ -7865,7 +7865,7 @@ input#pic-link {
 
 /* heo 加载动画头像 */
 .loading-img {
-  background: url(https://tuchuang.voooe.cn/images/2023/01/02/avatar.webp) no-repeat center center;
+  background: url(https://raw.githubusercontent.com/coderlibiao/img/main/blog/b_f24d88482d96f9155006926783630cf9.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -9799,6 +9799,18 @@ hr:before {
 .github-badge img:hover {
   scale: 1.05;
   transition: all 0.3s ease-in-out;
+}
+
+.icon-wangyiyunyinle:before {
+  content: "\eb7d";
+}
+
+@font-face {
+  font-family: "iconfont";
+  /* Project id 4730909 */
+  src: url('//at.alicdn.com/t/c/font_4730909_c9v3uius85.woff2?t=1730425967184') format('woff2'),
+    url('//at.alicdn.com/t/c/font_4730909_c9v3uius85.woff?t=1730425967184') format('woff'),
+    url('//at.alicdn.com/t/c/font_4730909_c9v3uius85.ttf?t=1730425967184') format('truetype');
 }
 .search-dialog {
   position: fixed;
