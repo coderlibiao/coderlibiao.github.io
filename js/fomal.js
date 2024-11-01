@@ -3412,22 +3412,6 @@ function createWinbox() {
               <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://raw.githubusercontent.com/coderlibiao/img/main/blog/bg.webp)" class="imgbox" onclick="changeBg('url(https://raw.githubusercontent.com/coderlibiao/img/main/blog/bg.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://raw.githubusercontent.com/coderlibiao/img/main/blog/微信图片_20241031231745.webp)" class="imgbox" onclick="changeBg('url(https://raw.githubusercontent.com/coderlibiao/img/main/blog/微信图片_20241031231745.webp)')"></a></div>
               </div>
             </details>
-<h3>2. 风景</h3>
-
-<details class="folding-tag" cyan><summary> 查看风景背景 </summary>
-              <div class='content'>
-              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/fj1.webp)" class="imgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/fj1.webp)')"></a></div>
-              </div>
-            </details>
-
-<h3>3. 萌宠</h3>
-
-<details class="folding-tag" cyan><summary> 查看萌宠背景 </summary>
-              <div class='content'>
-              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/mc1.webp)" class="imgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/mc1.webp)')"></a></div>
-              </div>
-            </details>
-
 <h3>4. 渐变色</h3>
 <details class="folding-tag" cyan><summary> 查看渐变色背景 </summary>
               <div class='content'>
