@@ -23,7 +23,7 @@
     <published>2024-12-16T08:20:16.000Z</published>
     <updated>2024-12-16T08:20:16.000Z</updated>
     
-    <content type="html"><![CDATA[<h1>1.测试使用</h1><h2 id="1-1-代码块">1.1 代码块</h2><p>修改修改</p><div class="tabs" id="分栏"><ul class="nav-tabs"></ul><div class="tab-contents"></div></div>]]></content>
+    <content type="html"><![CDATA[<h1>1.测试使用</h1><h2 id="1-1-代码块">1.1 代码块</h2><p>修改修改</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">VSCode终端</span></span><br><span class="line">hexo clean; hexo s</span><br><span class="line">hexo clean; hexo g; hexo d</span><br><span class="line">git add .; git commit -m &quot;npm publish&quot;; npm version patch; </span><br><span class="line">git push</span><br></pre></td></tr></table></figure>]]></content>
     
     
     <summary type="html">🥧本文介绍java中一些基础知识，可用作查看</summary>
