@@ -4,16 +4,16 @@
   
     
     <entry>
-      <title>java基础</title>
+      <title>java开发规范(黄山版)</title>
       <link href="/posts/b8b0eacd.html"/>
       <url>/posts/b8b0eacd.html</url>
       
-        <content type="html"><![CDATA[<h1>1.测试使用</h1><h2 id="1-1-代码块">1.1 代码块</h2><p>杜静大笨蛋</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">VSCode终端</span></span><br><span class="line">hexo clean; hexo s</span><br><span class="line">hexo clean; hexo g; hexo d</span><br><span class="line">git add .; git commit -m &quot;npm publish&quot;; npm version patch; </span><br><span class="line">git push</span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<h1>1.编程规范</h1><h2 id="1-1-命名风格">1.1 命名风格</h2><ol><li><span class='p red'>[强制]</span> 所有变成相关的命名均不能以下划线或美元符号开始，也不能以下划线或美元符号结束。</li></ol>]]></content>
       
       
       <categories>
           
-          <category> java编程语言 </category>
+          <category> java </category>
           
       </categories>
       
@@ -22,7 +22,7 @@
             
             <tag> java </tag>
             
-            <tag> java基础 </tag>
+            <tag> java开发规范 </tag>
             
         </tags>
       
