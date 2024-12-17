@@ -8,7 +8,7 @@
       <link href="/posts/b8b0eacd.html"/>
       <url>/posts/b8b0eacd.html</url>
       
-        <content type="html"><![CDATA[<h1>1.编程规范</h1><h2 id="1-1-命名风格">1.1 命名风格</h2><ol><li><span class='p red'>[强制]</span> 所有变成相关的命名均不能以下划线或美元符号开始，也不能以下划线或美元符号结束。</li></ol>]]></content>
+        <content type="html"><![CDATA[<h1 id="1-编程规范"><a href="#1-编程规范" class="headerlink" title="1.编程规范"></a>1.编程规范</h1><h2 id="1-1-命名风格"><a href="#1-1-命名风格" class="headerlink" title="1.1 命名风格"></a>1.1 命名风格</h2><ol><li><span class='p red'>强制</span> 所有变成相关的命名均不能以下划线或美元符号开始，也不能以下划线或美元符号结束。</li></ol>]]></content>
       
       
       <categories>
